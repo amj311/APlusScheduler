@@ -26,5 +26,20 @@ class Event {
 /******************************************** */
 
 
+/********************************************* */
+
+
+
+class CLassSession extends Event {
+	constructor(){}
+	start;
+	end;
+}
+
+
+
+/******************************************** */
+
+
 
 log(`Started app with ${userData.name}`, "err")
