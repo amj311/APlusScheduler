@@ -22,7 +22,6 @@
 }
 .hour-line {
 	border-top: 1px solid #aaa;
-	grid-row-span: 1;
 }
 .event {
 	width:100%;
