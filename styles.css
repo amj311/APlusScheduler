@@ -5,3 +5,27 @@
 	overflow-y: auto;
 }
 .msg.err { color: red; }
+
+#schedule {
+	width:200px;
+	border:1px solid #555;
+	border-radius: 5px;
+	margin: 1rem auto;
+	box-sizing: border-box;
+	max-height: 300px;
+	overflow-y: auto;
+}
+.schedGrid, .grid-bg {
+	display: grid;
+	grid-template-rows: repeat(calc(24*4), 1em);
+	width:100%;
+}
+.hour-line {
+	border-top: 1px solid #aaa;
+	grid-row-span: 1;
+}
+.event {
+	width:100%;
+	grid-row: 4 / span 1;
+	background: blue;
+}
