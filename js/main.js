@@ -1,3 +1,33 @@
+/***********************************************************
+ DATA STRUCTURE
+\***********************************************************/
+
+
+
+class Event {
+	constructor(start, end, specs = undefined){
+		start;
+		end;
+	}
+	start;
+	end;
+}
+
+class StudySession extends Event {
+	constructor(start, end, specs = undefined){
+		super(start, end, specs	);
+	}
+}
+
+function ifItWorked(){ console.log("It Worked!") }
+
+
+
+
+/***********************************************************
+ Calendar UI
+\***********************************************************/
+
 function log(type, ...msgs){
 	let logHTML = "";
 	const log = document.getElementById('msgs')
@@ -95,20 +125,6 @@ function posCalNow(){
 	//place nowMarker as close as possible to center of schedule
 	document.getElementsByClassName('aplus-cal-scroller')[0].scrollTop = Number($('#nowMarker').css('top').slice(0,-2)) - ( $('.aplus-cal-scroller').outerHeight() / 2 )
 }
-
-/********************************************* */
-
-
-
-class Event {
-	constructor(){}
-	start;
-	end;
-}
-
-
-
-/******************************************** */
 
 
 
