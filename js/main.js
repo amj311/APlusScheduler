@@ -84,6 +84,7 @@ function initiateNowMarker(){
 	updateNowMarker();
 	setTimeout( function(){
 		console.log("starting 1min cycle")
+                log('',"starting 1min cycle")
 		updateNowMarker();
 		window.setInterval(updateNowMarker, 1000*60)
 	}, secsToMinute*1000)
@@ -106,7 +107,8 @@ function updateNowMarker(){
     $($('#nowMarker')[0]).css('top', `${(dateTime.getHours()*unit_Hr) + (dateTime.getMinutes()*unit_Min)}px`);
     $('.time-bubble')[0].innerText = `${hrs}:${mins}`
 
-	console.log(`Time is now ${hrs}:${mins}`)
+	console.log(`Time is now ${hrs}:${mins}`)       
+        log('',`Time is now ${hrs}:${mins}`)
 }
 
 
